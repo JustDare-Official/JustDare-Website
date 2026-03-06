@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "JustDare - Real-Time Challenges",
+  "short_name": "JustDare",
+  "description": "Real-time global challenges where you dare, perform, compete and earn rewards. Make courage pay with JustDare.",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "id": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "entertainment",
+    "games",
+    "social",
+    "lifestyle"
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/LOGO.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "JustDare App Logo"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/assets/dragon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/dragon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/LOGO.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/LOGO.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Create Dare",
+      "short_name": "Create",
+      "description": "Create a new challenge",
+      "url": "/create-dare",
+      "icons": [
+        {
+          "src": "/assets/dragon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Browse Challenges",
+      "short_name": "Browse",
+      "description": "Explore available dares",
+      "url": "/challenges",
+      "icons": [
+        {
+          "src": "/assets/dragon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "My Profile",
+      "short_name": "Profile",
+      "description": "View your profile and achievements",
+      "url": "/profile",
+      "icons": [
+        {
+          "src": "/assets/dragon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://justdare.app"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+justdare",
+      "url": "/?protocol=%s"
+    }
+  ]
+}
