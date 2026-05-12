@@ -1,97 +1,24 @@
-# JustDare Robots.txt
-# https://justdare.app
+# robots.txt for https://justdare.app
+# Last updated: 2026-05-12
 
 User-agent: *
+# Allow crawling of everything by default
 Allow: /
+
+# Disallow paths that are not meaningful for search engines
+Disallow: /cdn-cgi/
+Disallow: /api/
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.map$
+
+# Crawl delay to avoid overloading the server (optional)
+Crawl-delay: 5
 
 # Sitemap location
 Sitemap: https://justdare.app/sitemap.xml
 
-# Allow all main pages
-Allow: /challenges
-Allow: /create-dare
-Allow: /profile
-Allow: /leaderboard
-Allow: /rewards
-Allow: /about
-Allow: /how-it-works
-Allow: /faq
-
-# Allow authentication pages (for indexing)
-Allow: /login
-Allow: /register
-
-# Allow category pages
-Allow: /categories/adventure
-Allow: /categories/social
-Allow: /categories/creative
-Allow: /categories/fitness
-
-# Allow static assets for indexing
-Allow: /assets/
-Allow: /public/
-
-# Disallow sensitive areas (if any exist)
-# Disallow: /admin/
-# Disallow: /api/private/
-# Disallow: /user-data/
-
-# Crawl delay (adjust based on server capacity)
-Crawl-delay: 1
-
-# Specific bot instructions
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 2
-
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 2
-
-# Block AI training crawlers (optional)
+# Additional bot‑specific rules (optional)
 User-agent: GPTBot
 Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-# Block malicious bots
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-User-agent: SemrushBot
-Crawl-delay: 10
-
-User-agent: MJ12bot
-Crawl-delay: 10
-
-User-agent: DotBot
-Crawl-delay: 10
-
-# Host directive
-Host: justdare.app
-
-# Clean-param directive for tracking parameters
-Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&gclid&fbclid /

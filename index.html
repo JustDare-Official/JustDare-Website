@@ -29,7 +29,7 @@
 
     <!-- Preload Brand Images -->
     <link rel="preload" as="image" href="/assets/LOGO.png" />
-    <link rel="preload" as="image" href="/assets/dragon.png" />
+    <link rel="preload" as="image" href="/assets/dragon.webp" />
 
     <!-- Manifest (PWA Support + SEO) -->
     <link rel="manifest" href="/manifest.json" />
@@ -84,15 +84,42 @@
     <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script type="module" crossorigin src="/assets/index-BfDas7jV.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Dj80mPg_.css">
+
+    <!-- CSS to ensure banner stays visible above React app -->
+    <style>
+   
+      /* Move banner script content into our container */
+      body > div[id*="keep"],
+      body > div[class*="keep"],
+      body > div[id*="ka"],
+      body > div[class*="ka"],
+      #keep-android-open-banner,
+      [id*="keep-android"],
+      [class*="keep-android"] {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 999999 !important;
+        pointer-events: auto !important;
+      }
+      
+ 
+    </style>
+    <script type="module" crossorigin src="/assets/index-el1jsNUr.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D6R7RLu7.css">
   </head>
 
   <body>
     <!-- Hidden H1 for SEO Indexing -->
     <h1 style="position:absolute; left:-9999px; top:-9999px;">JustDare - Real-Time Challenge App, Making Courage Pay</h1>
 
-    <div id="root"></div>
+    <!-- Keep Android Open Banner - loaded before React app -->
+    <div id="banner-container">
+      <script src="https://keepandroidopen.org/banner.js?size=minimal&animation=off"></script>
+    </div>
+
+    <div id="root"></div>
 
     <!-- Noscript fallback -->
     <noscript>
