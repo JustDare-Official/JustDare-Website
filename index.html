@@ -119,6 +119,21 @@
       <script src="https://keepandroidopen.org/banner.js?size=minimal&animation=off"></script>
     </div>
 
+    <!-- SPA redirect restore: runs before React to fix the URL for direct visits -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.getItem('justdare-redirect');
+        if (redirect) {
+          sessionStorage.removeItem('justdare-redirect');
+          // Only replace if the current path differs (avoid infinite loop)
+          var current = location.pathname + location.search + location.hash;
+          if (redirect !== current) {
+            history.replaceState(null, '', redirect);
+          }
+        }
+      })();
+    </script>
+
     <div id="root"></div>
 
     <!-- Noscript fallback -->
