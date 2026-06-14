@@ -1,24 +1,60 @@
 # robots.txt for https://justdare.app
-# Last updated: 2026-05-12
+# Last updated: 2026-06-14
 
+# Default: allow all crawlers
 User-agent: *
-# Allow crawling of everything by default
 Allow: /
 
 # Disallow paths that are not meaningful for search engines
 Disallow: /cdn-cgi/
 Disallow: /api/
-Disallow: /assets/
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*.map$
 
 # Crawl delay to avoid overloading the server (optional)
-Crawl-delay: 5
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://justdare.app/sitemap.xml
 
-# Additional bot‑specific rules (optional)
+# --- Explicitly allow AI search crawlers for AEO/GEO visibility ---
+
 User-agent: GPTBot
-Disallow: /
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
