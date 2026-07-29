@@ -13,10 +13,19 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://justdare.app/og-image.png</image:loc>
-      <image:title>JustDare — Online Challenge App | Just Dares, Earn Crypto</image:title>
-      <image:caption>Complete just dares and earn crypto rewards on the Web3 challenge platform</image:caption>
+      <image:title>JustDare — Earn Real Money for Completing Challenges &amp; Dares (2026)</image:title>
+      <image:caption>Get paid real money for completing online challenges and dares. Earn crypto rewards, no followers needed.</image:caption>
     </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://justdare.app/" />
+  </url>
+
+  <!-- How to Earn Real Money — Step-by-Step Guide -->
+  <url>
+    <loc>https://justdare.app/how-it-works</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://justdare.app/how-it-works" />
   </url>
 
   <!-- Blog / Insights -->
@@ -26,30 +35,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://justdare.app/blog" />
-  </url>
-
-  <!-- Blog — Whitepaper anchor -->
-  <url>
-    <loc>https://justdare.app/blog#whitepaper</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Blog — Tutorials anchor -->
-  <url>
-    <loc>https://justdare.app/blog#tutorials</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Blog — Release Notes anchor -->
-  <url>
-    <loc>https://justdare.app/blog#release-notes</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <!-- Terms and Conditions -->
